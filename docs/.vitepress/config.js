@@ -14,6 +14,7 @@ export default {
           text: 'Introduction',
           items: [
             { text: 'What is Ugreen NASync?', link: '/introduction/what-is-nasync' },
+            { text: 'What is this website?', link: '/introduction/what-is-this' },
             // Add more sidebar items
           ],
         },
@@ -27,6 +28,18 @@ export default {
             },
             // Your other sidebar items...
           ]
+        },
+        {
+          text: 'UGOS',
+          items: [
+            {
+              text: 'Custom Apps Install',
+              items : [
+                { text: 'Home Assistant', link: '/ugos/install/homeassistant' },
+              ]
+            }
+            // Add more sidebar items
+          ],
         },
         {
         text: 'Advanced Guides',
