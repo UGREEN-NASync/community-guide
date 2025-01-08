@@ -47,6 +47,10 @@ export default {
           { text: 'Accessing BIOS', link: '/advanced-guides/accessing-bios' },
           // ... other advanced guides
         ]
+        },
+        {
+          text: 'Contributing',
+          link: '/contributing'
         }
         // Add more sections
       ],

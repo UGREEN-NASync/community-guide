@@ -1,0 +1,35 @@
+name: Content request
+description: Suggest some content for the website
+title: "[Content] Short Description"
+labels: content
+body:
+  - type: textarea
+    attributes:
+      label: Content description
+      description: A clear and concise description of what you want to have. Do NOT combine multiple content suject requests into one issue. Do NOT use this issue to make a feature request. Open new issues for EACH request.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Why is this content needed? Please justify and explain.
+      description: A clear and concise explanation justifying why this content is needed. Ex. I can't find a way to [...]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots and Additional Info
+      description: |
+        Provide any relevant additional information such as screenshots or other details here.
+        
+        Tip: You can attach images files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: Before submitting your content request.
+      options:
+        - label: I have made a separate issue for each content I am requesting.
+          required: true
+        - label: I have searched the issues and this content has not been requested.
+          required: true
