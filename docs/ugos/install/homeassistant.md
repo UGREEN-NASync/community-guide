@@ -114,5 +114,5 @@ HACS (Home Assistant Community Store) is a community-driven plugin store of Home
 Congrats ! You installed Home Assistant ! :tada:
 
 ::: info Credit
-This guide was created by Ugreen and modified by [Topiga](https://github.com/topiga/)
+This guide was created by the Ugreen NASync team and modified by [Topiga](https://github.com/topiga/)
 :::
