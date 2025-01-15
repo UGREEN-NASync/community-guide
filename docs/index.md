@@ -23,6 +23,8 @@ hero:
     - theme: alt
       text: DE Forum
       link: https://ugreen-forum.de/
+  image:
+    src: ./ug_community_guide_logo.svg
 
 features:
   - icon: 📖
@@ -35,3 +37,23 @@ features:
     title: Powerful Search and Tags
     details: Quickly find exactly what you're looking for with our advanced search system. 
 ---
+
+<style>
+:root {
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #00C684 50%, #008F5D 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>
