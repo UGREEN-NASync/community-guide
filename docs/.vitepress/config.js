@@ -1,5 +1,3 @@
-import { pagefindPlugin } from 'vitepress-plugin-pagefind'
-
 export default {
     title: 'Ugreen NASync Guide',
     description: 'A comprehensive guide to Ugreen NASync',
