@@ -30,12 +30,15 @@ features:
   - icon: 📖
     title: Explore Guides
     details: Access guides for setup, troubleshooting, and advanced software and hardware customizations.
+    link: introduction/what-is-nasync
   - icon: ⏰
     title: Contribute to the Community
     details: Share your expertise by writing guides and helping others.
+    link: contributing
   - icon: 🔍  
     title: Powerful Search and Tags
-    details: Quickly find exactly what you're looking for with our advanced search system. 
+    details: Quickly find exactly what you're looking for with our advanced search system.
+    link: #
 ---
 
 <style>
