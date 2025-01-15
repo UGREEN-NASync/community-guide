@@ -41,19 +41,19 @@ features:
 <style>
 :root {
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #00C684 50%, #008F5D 50%);
-  --vp-home-hero-image-filter: blur(44px);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #00C684 50%, #008F5D 50%) !important;;
+  --vp-home-hero-image-filter: blur(44px) !important;;
 }
 
 @media (min-width: 640px) {
   :root {
-    --vp-home-hero-image-filter: blur(56px);
+    --vp-home-hero-image-filter: blur(56px) !important;;
   }
 }
 
 @media (min-width: 960px) {
   :root {
-    --vp-home-hero-image-filter: blur(68px);
+    --vp-home-hero-image-filter: blur(68px) !important;;
   }
 }
 </style>

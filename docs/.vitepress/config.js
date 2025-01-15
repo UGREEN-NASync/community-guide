@@ -1,4 +1,5 @@
-// .vitepress/config.js
+import { pagefindPlugin } from 'vitepress-plugin-pagefind'
+
 export default {
     title: 'Ugreen NASync Guide',
     description: 'A comprehensive guide to Ugreen NASync',
@@ -54,6 +55,9 @@ export default {
         }
         // Add more sections
       ],
+      search: {
+        provider: 'local'
+      }
     },
   }
   
