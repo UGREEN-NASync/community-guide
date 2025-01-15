@@ -18,7 +18,7 @@ Follow these steps to fork the repository, clone it, create a new branch, and se
 2. Click on `Fork` in the top right corner. This will create a copy of the repository in your GitHub account
 3. Open [GitHub Desktop](https://desktop.github.com/).
 4. In the top menu of GitHub Desktop, navigate to `File` > `Clone Repository...`.
-5. In the GitHub.com category, you should see the repository that you cloned., 
+5. In the GitHub.com category, you should see the repository that you cloned.,
 6. To clone the repository, click on `Clone`.
 7. Upon completion of the cloning process, navigate to `Current Branch`, then select `New Branch`. Here, input a descriptive name for your new branch.
 

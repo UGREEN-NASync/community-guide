@@ -19,3 +19,7 @@ Contact
 If you have any further questions or comments, please feel free to reach out to us. We have a dedicated team of helpers ready to assist you on our Discord server. You can join us by clicking here.
 
 Thank you for your interest in the Ugreen NASync Community Guide !
+
+## Disclaimer
+
+This is a work in progress, please be patient as we add content.
