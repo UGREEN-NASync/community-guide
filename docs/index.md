@@ -24,7 +24,7 @@ hero:
       text: DE Forum
       link: https://ugreen-forum.de/
   image:
-    src: ./ug_community_guide_logo.svg
+    src: /ug_community_guide_logo.svg
 
 features:
   - icon: 📖
