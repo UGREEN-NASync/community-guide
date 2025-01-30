@@ -1,0 +1,36 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  push:
+    branches:
+      - dev  # or master, or the branch you want to deploy from
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false # Prevents the token from being saved in the git config
+          fetch-depth: 0 # Fetches all history for all branches and tags
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Use Node.js version 16.x
+
+      - name: Install Dependencies
+        run: |
+          npm ci
+
+      - name: Build Site
+        run: |
+          npm run docs:build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
+          # The 'publish_branch' defaults to 'gh-pages' if not set

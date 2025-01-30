@@ -1,0 +1,33 @@
+:root {
+    /* Brand colors */
+    --vp-c-brand-1: #00A76F; /* Ugreen primary color */
+    --vp-c-brand-2: #008F5D; /* Darker shade for hover */
+    --vp-c-brand-3: #007A4D; /* Even darker shade for active states */
+    --vp-c-brand-soft: rgba(0, 167, 111, 0.14); /* Soft background version */
+  
+    /* Custom containers */
+    --vp-custom-block-tip-border: var(--vp-c-brand-1);
+    --vp-custom-block-tip-text: var(--vp-c-brand-1);
+    --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  
+    /* Button colors */
+    --vp-button-brand-bg: var(--vp-c-brand-1);
+    --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+    --vp-button-brand-active-bg: var(--vp-c-brand-3);
+  
+    /* Homepage hero name gradient */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: linear-gradient(120deg, #00A76F 30%, #4CAF50);
+  
+    /* Links */
+    --vp-c-brand: var(--vp-c-brand-1);
+  }
+  
+  /* Dark mode adjustments */
+  .dark {
+    --vp-c-brand-1: #00C684; /* Brighter green for dark mode */
+    --vp-c-brand-2: #00A76F;
+    --vp-c-brand-3: #008F5D;
+    --vp-c-brand-soft: rgba(0, 198, 132, 0.14);
+  }
+  
