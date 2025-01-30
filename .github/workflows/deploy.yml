@@ -3,7 +3,7 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - dev  # or master, or the branch you want to deploy from
+      - main  # or master, or the branch you want to deploy from
 
 jobs:
   build-deploy:
