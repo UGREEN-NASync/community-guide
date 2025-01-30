@@ -10,9 +10,9 @@ We encourage contributions to this guide! If you have updates, corrections, new 
 
 If you encounter any problems with the guide, or if you have a suggestion for a new feature or improvement, please let us know by creating an issue. To make this process easier, we have templates for bug reports and feature requests. Please use the appropriate template when creating your issue:
 
-- Use [Bug Report](https://github.com/UGREEN-NASync/community-guide/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=[BUG]%20Short%20Description) for reporting any errors or problems you encounter.
-- Use [Feature Request](https://github.com/UGREEN-NASync/community-guide/issues/new?assignees=&labels=bug&projects=&template=feature_request.yml&title=[Feature]%20Short%20Description) for suggesting new features or improvements.
-- Use [Content Request](https://github.com/UGREEN-NASync/community-guide/issues/new?assignees=&labels=bug&projects=&template=content_request.yml&title=[Content]%20Short%20Description) for suggesting new features or improvements.
+- Use [Bug Report](https://github.com/UGREEN-NASync/community-guide/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml) for reporting any errors or problems you encounter.
+- Use [Feature Request](https://github.com/UGREEN-NASync/community-guide/issues/new?assignees=&labels=bug&projects=&template=feature_request.yml) for suggesting new features or improvements.
+- Use [Content Request](https://github.com/UGREEN-NASync/community-guide/issues/new?assignees=&labels=bug&projects=&template=content_request.yml) for suggesting new features or improvements.
 
 Contact
 
