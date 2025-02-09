@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitor and enforce permissions for home directory and .ssh
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/check_and_fix_ssh_permissions.sh
+Restart=always
+User=root
+ExecStartPre=/bin/bash -c 'while ! systemctl is-active ssh || ! [ -d /home/<USER NAME> ]; do echo "Waiting for ssh and /home/<USER NAME>..."; sleep 5; done'
+
+[Install]
+WantedBy=multi-user.target

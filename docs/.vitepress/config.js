@@ -32,9 +32,16 @@ export default {
           text: 'UGOS',
           items: [
             {
+              text: 'Tweaks',
+              items : [
+                { text: 'Public Key SSH authentification', link: '/ugos/tweak/ssh_public_key' }
+              ]
+            },
+            {
               text: 'Custom Apps Install',
               items : [
                 { text: 'Home Assistant', link: '/ugos/install/homeassistant' },
+                { text: 'Tailscale', link: '/ugos/install/tailscale' }
               ]
             }
             // Add more sidebar items
