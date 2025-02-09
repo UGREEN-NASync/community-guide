@@ -34,7 +34,7 @@ export default {
             {
               text: 'Tweaks',
               items : [
-                { text: 'Public Key SSH authentification', link: '/ugos/tweak/ssh_public_key' }
+                { text: 'Public Key SSH Authentication', link: '/ugos/tweak/ssh_public_key' }
               ]
             },
             {
