@@ -47,7 +47,7 @@ You can also look at the service status and troublshoot issues:
 sudo systemctl status ssh-permission-monitor.service
 ```
 
-After those steps, you key should be accepted even after system reboots or configuration changes through the UGOS web interface.
+After those steps, your key should be accepted even after system reboots or configuration changes through the UGOS web interface.
 
 ::: info Credit
 This guide was originally created by [RealMrCr4cker](https://www.reddit.com/user/RealMrCr4cker/) ([Github repo](https://github.com/ln-12/UGOS_scripts/)) and is under an MIT Licence
