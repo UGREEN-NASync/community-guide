@@ -18,7 +18,7 @@ Next, create a new file for the script
 sudo nano /usr/local/bin/check_and_fix_ssh_permissions.sh
 ```
 
-and paste the content of [check_and_fix_ssh_permissions.sh](check_and_fix_ssh_permissions.sh) inside. Make sure to replace `<USER NAME>` with you actual user name.
+and paste the content of [check_and_fix_ssh_permissions.sh](check_and_fix_ssh_permissions.sh) inside. Make sure to replace `<USER NAME>` with you actual username.
 
 Next, create the service file
 
@@ -26,7 +26,7 @@ Next, create the service file
 sudo nano /etc/systemd/system/ssh-permission-monitor.service
 ```
 
-and paste the content of [ssh-permission-monitor.service](ssh-permission-monitor.service) inside. Again, replace `<USER NAME>` with you actual user name.
+and paste the content of [ssh-permission-monitor.service](ssh-permission-monitor.service) inside. Again, replace `<USER NAME>` with you actual username.
 
 Now reload the systemctl daemon:
 
