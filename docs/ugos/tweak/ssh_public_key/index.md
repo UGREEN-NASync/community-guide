@@ -28,7 +28,7 @@ sudo nano /etc/systemd/system/ssh-permission-monitor.service
 
 and paste the content of [ssh-permission-monitor.service](ssh-permission-monitor.service) inside. Again, replace `<USER NAME>` with you actual user name.
 
-Now reload the systemctl deamon:
+Now reload the systemctl daemon:
 
 ```sh
 sudo systemctl daemon-reload
