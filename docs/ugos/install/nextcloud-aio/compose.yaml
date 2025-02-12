@@ -1,0 +1,34 @@
+services:
+  nextcloud-aio-mastercontainer:
+    image: nextcloud/all-in-one:latest
+    init: true
+    restart: always
+    container_name: nextcloud-aio-mastercontainer # This line is not allowed to be changed as otherwise AIO will not work correctly
+    volumes:
+      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config # This line is not allowed to be changed as otherwise the built-in backup solution will not work
+      - /var/run/docker.sock:/var/run/docker.sock:ro # May be changed on macOS, Windows or docker rootless. See the applicable documentation. If adjusting, don't forget to also set 'WATCHTOWER_DOCKER_SOCKET_PATH'!
+    ports:
+      # - 80:80 # Can be removed when running behind a web server or reverse proxy (like Apache, Nginx, Cloudflare Tunnel and else). See https://github.com/nextcloud/all-in-one/blob/main/reverse-proxy.md
+      - 8880:8080
+      # - 8443:8443 # Can be removed when running behind a web server or reverse proxy (like Apache, Nginx, Cloudflare Tunnel and else). See https://github.com/nextcloud/all-in-one/blob/main/reverse-proxy.md
+    environment:
+      - APACHE_IP_BINDING=0.0.0.0
+      - APACHE_PORT=11000
+      # - NEXTCLOUD_DATADIR=/volume1/docker/nextcloud-aio/data # OPTIONAL: Custom data directory where your nextcloud files for each user are stored
+      # - NEXTCLOUD_MOUNT=/mnt/ # OPTIONAL: To allow nextcloud-aio to access local storage i.e. /volume1/documents
+      - NEXTCLOUD_UPLOAD_LIMIT=1G
+      - NEXTCLOUD_ENABLE_DRI_DEVICE=true
+      - NEXTCLOUD_STARTUP_APPS=deck twofactor_totp tasks calendar contacts notes
+      - BORG_RETENTION_POLICY=--keep-within=7d --keep-weekly=4 --keep-monthly=6
+    networks: # Is needed if you want to use docker DNS name resolution for Nginx Proxy Manager
+      - proxy # External docker network for your frontend services
+    # networks: # Is needed when you want to create the nextcloud-aio network with ipv6-support using this file, see the network config at the bottom of the file
+    #   - nextcloud-aio # Is needed when you want to create the nextcloud-aio network with ipv6-support using this file, see the network config at the bottom of the file
+
+volumes: # If you want to store the data on a different drive, see https://github.com/nextcloud/all-in-one#how-to-store-the-filesinstallation-on-a-separate-drive
+  nextcloud_aio_mastercontainer:
+    name: nextcloud_aio_mastercontainer # This line is not allowed to be changed as otherwise the built-in backup solution will not work
+
+networks:
+  proxy: # Is needed if you want to use docker DNS name resolution for Nginx Proxy Manager
+    external: true

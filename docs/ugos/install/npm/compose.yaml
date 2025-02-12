@@ -1,0 +1,68 @@
+services:
+  npm-app:
+    container_name: npm
+    image: jc21/nginx-proxy-manager:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "80:80" # service running to change UGOS 80 to 9000!
+      - "8181:81" # NPM WebUI
+      - "443:443" # service running to change UGOS 443 to 9443!
+    environment:
+      - DB_MYSQL_HOST=db
+      - DB_MYSQL_PORT=3306
+      - DB_MYSQL_USER=npm
+      - DB_MYSQL_PASSWORD=${NPM_DB_PW} # see .env file
+      - DB_MYSQL_NAME=npm
+    volumes:
+      - ./data:/data
+      - ./ssl:/etc/letsencrypt
+    networks:
+      - proxy
+      - default
+
+  db:
+    image: jc21/mariadb-aria:latest
+    restart: unless-stopped
+    container_name: npm-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=${NPM_DB_ROOT_PW} # see .env file
+      - MYSQL_DATABASE=npm
+      - MYSQL_USER=npm
+      - MYSQL_PASSWORD=${NPM_DB_PW} # see .env file
+    volumes:
+      - ./db:/var/lib/mysql
+    networks:
+      - default
+
+  goaccess:
+    image: 'xavierh/goaccess-for-nginxproxymanager:latest'
+    container_name: goaccess
+    restart: unless-stopped
+    ports:
+        - 7880:7880
+    environment:
+        - TZ=Europe/Berlin         
+        - SKIP_ARCHIVED_LOGS=False #optional
+        - DEBUG=False #optional
+        - BASIC_AUTH=False #optional
+        # - BASIC_AUTH_USERNAME=user #optional
+        # - BASIC_AUTH_PASSWORD=pass #optional   
+        - EXCLUDE_IPS=127.0.0.1 #optional - comma delimited 
+        - LOG_TYPE=NPM #optional - more information below
+        - ENABLE_BROWSERS_LIST=True #optional - more information below
+        - CUSTOM_BROWSERS=Kuma:Uptime,TestBrowser:Crawler #optional - comma delimited, more information below
+        - HTML_REFRESH=5 #optional - Refresh the HTML report every X seconds. https://goaccess.io/man
+        - KEEP_LAST=30 #optional - Keep the last specified number of days in storage. https://goaccess.io/man
+        - PROCESSING_THREADS=1 #optional - This parameter sets the number of concurrent processing threads in the program's execution, affecting log data analysis, typically adjusted based on CPU cores. Default is 1. https://goaccess.io/man
+    volumes:
+    - ./data/logs:/opt/log # local path of the NPM logs
+    # - /path/to/host/custom:/opt/custom #optional, required if using log_type = CUSTOM
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+  default:
