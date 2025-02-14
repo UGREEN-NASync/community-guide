@@ -5,10 +5,10 @@ The setup process is similar to [Nginx Proxy Manager (NPM)](docs/ugos/install/np
 For more information visit the [nextcloud-aio GitHub repository](https://github.com/nextcloud/all-in-one)
 
 ## Instructions
-Create a new directory called `nextcloud-aio` within the docker folder and create a new `compose.yaml` file. The docker compose file for nextcloud-aio can be found [here](docs/ugos/install/nextcloud-aio/compose.yaml). 
+Create a new directory called `nextcloud-aio` within the docker folder and create a new `compose.yaml` file. The docker compose file for nextcloud-aio can be found [here](/docs/ugos/install/nextcloud-aio/compose.yaml). 
 
 [!TIP]
-The name of the folder always dictates the prefix that docker specifies for all things automatically created, e..g volumes, networks, service names (unless specified otherwise). 
+The name of the folder always dictates the prefix that docker specifies for all things automatically created, e.g. volumes, networks, service names (unless specified otherwise). 
 
 Save the compose file, right click the `nextcloud-aio` folder in the VSCode Explorer and choose `Open in integrated terminal`. 
 Launch the container by executing 
@@ -36,7 +36,7 @@ sudo docker run -it --rm --volume nextcloud_aio_nextcloud:/var/www/html:rw alpin
 ```
 
 Change or add the following parameters in the `config.php`. 
-A list with all available parameters can be found in the [Nextcloud docs](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#). 
+A list with all available parameters can be found in the [Nextcloud docs](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html). 
 
 ```php
   'default_phone_region' => 'DE', # your locale, i.e. 'EN' according to ISO 3166-1 A-2

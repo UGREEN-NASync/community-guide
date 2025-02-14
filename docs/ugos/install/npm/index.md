@@ -14,7 +14,7 @@ service:
 ```
 ## Instructions
 Create a new directory called `npm` within the docker folder and create a new `compose.yaml` file. 
-The docker compose file for Nginx Proxy Manager (NPM) can be found [here](docs/ugos/install/npm/compose.yaml).
+The docker compose file for Nginx Proxy Manager (NPM) can be found [here](/docs/ugos/install/npm/compose.yaml).
 
 [!NOTE] 
 In your docker app on UGOS create a new network called `proxy`. This network can be used with other docker services to enable container name resolution ("docker DNS"). 
