@@ -1,6 +1,6 @@
 # Setting up Nginx Proxy Manager
 [!NOTE]
-This guide comes with an optional dashboard for NPM using goaccess. To funciton correctly it accesses the NPM logs as specified in the `compose.yaml`.  
+This guide comes with an optional dashboard for NPM using goaccess. To function correctly it accesses the NPM logs as specified in the `compose.yaml`.  
 
 You can omit the log dashbaord by deleting or commenting the goaccess section in the `compose.yaml`
 ```yaml
