@@ -14,7 +14,7 @@ service:
 ```
 ## Instructions
 Create a new directory called `npm` within the docker folder and create a new `compose.yaml` file. 
-The docker compose file for Nginx Proxy Manager (NPM) can be found [here](/docs/ugos/install/npm/compose.yaml).
+The docker compose file for Nginx Proxy Manager (NPM) can be found [here](https://raw.githubusercontent.com/UGREEN-NASync/community-guide/refs/heads/main/docs/ugos/install/npm/compose.yaml).
 
 [!NOTE] 
 In your docker app on UGOS create a new network called `proxy`. This network can be used with other docker services to enable container name resolution ("docker DNS"). 
@@ -62,3 +62,7 @@ The default login credentials for NPM are `admin@example.com` and `changeme`
 
 [!IMPORTANT]
 Make sure that the external https port that you specified for NPM in the docker-compose.yaml (e.g. 4443:443 OR 443:443 OR ANY_PORT:443) is forwarded by your router to your server. This should be the only open port on your router! DO NOT open the ports of the individual services directly on your router. This is the whole point of using a reverse proxy such as NPM!
+
+::: info Credit
+This guide was created by [vzvl](https://github.com/vzvl)
+:::

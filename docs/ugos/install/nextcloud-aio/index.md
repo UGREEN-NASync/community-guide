@@ -5,7 +5,7 @@ The setup process is similar to [Nginx Proxy Manager (NPM)](docs/ugos/install/np
 For more information visit the [nextcloud-aio GitHub repository](https://github.com/nextcloud/all-in-one)
 
 ## Instructions
-Create a new directory called `nextcloud-aio` within the docker folder and create a new `compose.yaml` file. The docker compose file for nextcloud-aio can be found [here](/docs/ugos/install/nextcloud-aio/compose.yaml). 
+Create a new directory called `nextcloud-aio` within the docker folder and create a new `compose.yaml` file. The docker compose file for nextcloud-aio can be found [here](https://raw.githubusercontent.com/UGREEN-NASync/community-guide/refs/heads/main/docs/ugos/install/nextcloud-aio/compose.yaml). 
 
 [!TIP]
 The name of the folder always dictates the prefix that docker specifies for all things automatically created, e.g. volumes, networks, service names (unless specified otherwise). 
@@ -56,3 +56,7 @@ sudo docker exec --user www-data -it nextcloud-aio-nextcloud php occ YOUR_COMMAN
 - [IANA identifiers for timezones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)
 - [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes#Current_ISO_3166_country_codes)
 - [ISO 639 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes#Table)
+
+::: info Credit
+This guide was created by [vzvl](https://github.com/vzvl)
+:::
