@@ -41,6 +41,8 @@ export default {
               text: 'Custom Apps Install',
               items : [
                 { text: 'Home Assistant', link: '/ugos/install/homeassistant' },
+                { text: 'Nextcloud-AIO', link: '/ugos/install/nextcloud-aio' },
+                { text: 'Ngnix Proxy Manager', link: '/ugos/install/npm' },
                 { text: 'Tailscale', link: '/ugos/install/tailscale' }
               ]
             }
@@ -64,5 +66,11 @@ export default {
         provider: 'local'
       }
     },
+    ignoreDeadLinks: [
+      // ignore all localhost links
+      /^https?:\/\/localhost/,
+      // ignore all raw githubusercontent links
+      /^https?:\/\/raw.githubusercontent.com/,
+    ]
   }
   
