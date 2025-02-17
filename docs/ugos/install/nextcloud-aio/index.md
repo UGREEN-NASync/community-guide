@@ -7,8 +7,9 @@ For more information visit the [nextcloud-aio GitHub repository](https://github.
 ## Instructions
 Create a new directory called `nextcloud-aio` within the docker folder and create a new `compose.yaml` file. The docker compose file for nextcloud-aio can be found [here](https://raw.githubusercontent.com/UGREEN-NASync/community-guide/refs/heads/main/docs/ugos/install/nextcloud-aio/compose.yaml). 
 
-[!TIP]
+::: tip
 The name of the folder always dictates the prefix that docker specifies for all things automatically created, e.g. volumes, networks, service names (unless specified otherwise). 
+:::
 
 Save the compose file, right click the `nextcloud-aio` folder in the VSCode Explorer and choose `Open in integrated terminal`. 
 Launch the container by executing 
@@ -57,6 +58,6 @@ sudo docker exec --user www-data -it nextcloud-aio-nextcloud php occ YOUR_COMMAN
 - [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes#Current_ISO_3166_country_codes)
 - [ISO 639 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes#Table)
 
-::: info Credit
+::: info CREDIT
 This guide was created by [vzvl](https://github.com/vzvl)
 :::
