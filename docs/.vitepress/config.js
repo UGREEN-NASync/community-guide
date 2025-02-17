@@ -66,5 +66,11 @@ export default {
         provider: 'local'
       }
     },
+    ignoreDeadLinks: [
+      // ignore all localhost links
+      /^https?:\/\/localhost/,
+      // ignore all raw githubusercontent links
+      /^https?:\/\/raw.githubusercontent.com/,
+    ]
   }
   

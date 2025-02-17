@@ -1,7 +1,7 @@
 # Setting up Nextcloud-AIO
 This guide assumes that you have ssh access to your UGreen NAS. It is recommended to use Visual Studio Code to access your servers directories and terminal/CLI. 
 
-The setup process is similar to [Nginx Proxy Manager (NPM)](docs/ugos/install/npm) and all docker services in general for that matter. 
+The setup process is similar to [Nginx Proxy Manager (NPM)](/ugos/install/npm/) and all docker services in general for that matter. 
 For more information visit the [nextcloud-aio GitHub repository](https://github.com/nextcloud/all-in-one)
 
 ## Instructions
