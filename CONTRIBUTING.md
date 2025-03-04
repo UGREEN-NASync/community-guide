@@ -6,7 +6,7 @@ Before contributing, please take a moment to read and understand these guideline
 
 ## Creating a Pull Request
 
-More in-depth tutorial at [Contributing In-Depth Tutorial](https://ugreen-nasync.github.io/community-guide/contributing.html)
+More in-depth tutorial at [Contributing In-Depth Tutorial](https://guide.ugreen.community/contributing.html)
 
 1. Make sure that your code does not include any unnecessary files or dependencies. These should be removed before the end of the layer when doing a build.
 2. We ask that you follow our formatting practices. While we do not enforce strict styles, consistency with the existing codebase makes the project easier to understand and maintain.
