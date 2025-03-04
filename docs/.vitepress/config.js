@@ -41,6 +41,7 @@ export default {
               text: 'Custom Apps Install',
               items : [
                 { text: 'Home Assistant', link: '/ugos/install/homeassistant' },
+                { text: 'Immich', link: '/ugos/install/immich' },
                 { text: 'Nextcloud-AIO', link: '/ugos/install/nextcloud-aio' },
                 { text: 'Ngnix Proxy Manager', link: '/ugos/install/npm' },
                 { text: 'Tailscale', link: '/ugos/install/tailscale' }
