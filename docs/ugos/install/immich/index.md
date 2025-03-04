@@ -95,7 +95,7 @@ To configure Immich for Gmail, you will need these information:
 - SMTP server: `smtp.gmail.com`
 - Port: `587` (Recommended - TLS) or `465` (SSL)
 - Username: `your-email-address@gmail.com`
-- Password: [an app password]()
+- Password: [an app password](https://support.google.com/mail/answer/185833)
 - Ignore certificate errors : Unchecked
 - From address : `Immich Photo Server <your-email-address@gmail.com>`
 
