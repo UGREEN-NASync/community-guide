@@ -34,7 +34,7 @@ After the deployment is complete, open the browser and enter the NAS IP address 
 
 You should see a registration page for the first user (and admin) of your Immich server. Use your real email and a strong password.
 
-![Admin registration page](./gadmin-registration.png)
+![Admin registration page](./admin-registration.png)
 
 After registering, you should see a login page. Use the email address you used to create the first account, and the password you set earlier.
 Options will present to you to be configured. Leave everything as default.
