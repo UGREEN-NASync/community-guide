@@ -22,7 +22,7 @@ In the wizard, you'll need to provide a Docker Compose configuration file. The d
 
 ### 3. Deploy the Project
 
-After confirming that the configuration file is correct, click "Deploy Now". The system will automatically pull the image and start the container. Once the deployment is complete, you can access the Home Assistant console by visiting `your-nas-name.local:2283` in your browser.
+After confirming that the configuration file is correct, click "Deploy Now". The system will automatically pull the image and start the container. Once the deployment is complete, you can access the Immich Webpage by visiting `your-nas-name.local:2283` in your browser.
 
 ![Docker Configuration page](./config-docker.png)
 
