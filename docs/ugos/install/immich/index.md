@@ -2,6 +2,10 @@
 
 Immich is a **self-hosted** photo and video management solution that allows users to back up, organize, and manage their media on their **own** servers, offering enhanced **privacy** and **control** over personal data. It is designed for **high performance**, capable of handling **large media libraries** efficiently. Key features include **automatic backups** from **mobile devices**, **multi-user** support, **advanced search** functionality using tags and EXIF data, **image tagging**, **object detection**, and **geolocation** mapping. Immich's user-friendly mobile app and web interface make it **easy to upload and view** media, while its active community ensures ongoing development and support. This makes Immich a robust, privacy-focused alternative to third-party cloud services for managing extensive photo and video collections.
 
+::: warning
+This guide was last tested for Immich v1.128.0
+:::
+
 ## Deploy Container Using Docker Compose
 
 To quickly deploy Immich on UGREEN NAS, it is **recommended** to use Docker Compose for project management. This method is suitable when you need to create and manage multiple containers, making containerized management convenient. The following detailed steps will guide you how to deploy Home Assistant using Docker Compose. [How to Use Docker Compose on UGREEN UGOS Pro?](https://support.ugnas.com/knowledgecenter/#/detail/eyJpZCI6MzMyLCJ0eXBlIjoidGFnMDAxIiwicGF0aENvZGUiOiJwcm8wMDIsOWpvcDV3LGUyZVNueiIsImxhbmd1YWdlIjoiZW4tVVMiLCJjbGllbnRUeXBlIjoiUEMiLCJhcnRpY2xlVmVyc2lvbiI6IiJ9)
