@@ -65,6 +65,16 @@ export default {
       ],
       search: {
         provider: 'local'
+      },
+      editLink: {
+        pattern: 'https://github.com/UGREEN-NASync/community-guide/edit/main/docs/:path',
+        text: 'Edit this page on GitHub'
+      },
+      lastUpdated: {
+        formatOptions: {
+          dateStyle: 'medium',
+          timeStyle: 'medium'
+        }
       }
     },
     ignoreDeadLinks: [
@@ -72,6 +82,6 @@ export default {
       /^https?:\/\/localhost/,
       // ignore all raw githubusercontent links
       /^https?:\/\/raw.githubusercontent.com/,
-    ]
+    ],
   }
   

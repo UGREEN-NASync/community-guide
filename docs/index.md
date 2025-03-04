@@ -35,7 +35,7 @@ features:
     title: Contribute to the Community
     details: Share your expertise by writing guides and helping others.
     link: contributing
-  - icon: 🔍  
+  - icon: 🔍 
     title: Powerful Search and Tags
     details: Quickly find exactly what you're looking for with our advanced search system.
     link: #
