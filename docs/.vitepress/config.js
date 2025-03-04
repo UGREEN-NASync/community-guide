@@ -80,6 +80,10 @@ export default {
           dateStyle: 'medium',
           timeStyle: 'medium'
         }
+      },
+      docFooter: {
+        prev: false,
+        next: false
       }
     },
     ignoreDeadLinks: [
