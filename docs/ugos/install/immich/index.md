@@ -116,5 +116,5 @@ To configure Outlook for Immich, you will need these information.
 - From address : `Immich Photo Server <your-email-address@outlook.com>`
 
 ::: info Credit
-This guide was created by [Topiga](https://github.com/topiga/)
+This guide was created by [Topiga](https://github.com/topiga/). Consider buying an [Immich licence](https://immich.app/blog/2024/immich-licensing/) to support their great work!
 :::
