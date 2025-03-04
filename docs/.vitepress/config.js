@@ -7,6 +7,11 @@ export default {
         { text: 'Home', link: '/' },
         // Add more navigation items if needed
       ],
+      socialLinks: [
+        // You can add any icon from simple-icons (https://simpleicons.org/):
+        { icon: 'github', link: 'https://github.com/UGREEN-NASync/community-guide' },
+        { icon: 'reddit', link: 'https://www.reddit.com/r/UgreenNASync/' },
+      ],
       sidebar: [
         // Define your sidebar here
         {
