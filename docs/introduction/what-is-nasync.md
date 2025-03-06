@@ -7,8 +7,8 @@ Ugreen NASync is a new series of Network Attached Storage (NAS) devices launched
 - Multiple models available :
   - the DXP2800, a 2-bay NAS,
   - the DXP4800, a 4-bay NAS,
-  - the DXP4800 Plus, with a better CPU and two 10GbE NICs,
-  - the DXP6800 Pro, a more professional oriented NAS, with 6 bays,
+  - the DXP4800 Plus, with a better CPU and a 10GbE NIC, in addition of a 2.5GbE NIC,
+  - the DXP6800 Pro, a more professional oriented NAS, with 6 bays, and two 10GbE NICs,
   - the DXP8800 Plus, the biggest one yet, with 8 bays,
   - the DX480T Plus, a NVMe-only NAS, with 4 slots.
 - Powered by 12th Gen Intel processors, ranging from Intel N100, to the Pentium Gold 8505, and the Intel Core i5 1235u depending on the model
