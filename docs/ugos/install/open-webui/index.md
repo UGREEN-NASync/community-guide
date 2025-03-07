@@ -23,9 +23,6 @@ In the wizard, you'll need to provide a Docker Compose configuration file. The D
 
 After confirming that the configuration file is correct, click "Deploy Now". The system will automatically pull the image and start the container. Once the deployment is complete, you can access the OpenWebUI Webpage by visiting `your-server-name.local:[port]` in your browser.
 
-![Docker Configuration page](./config-docker.png)
-
-
 ::: info Credit
 This guide was created by [Topiga](https://github.com/topiga/). Consider sponsoring [Timothy Jaeryang Baek](https://github.com/sponsors/tjbck) to support their great work!
 :::
