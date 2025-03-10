@@ -12,16 +12,16 @@ In your system, open the "Docker" app, click "Project > Create" to start the pro
 
 ### 2. Configure the Docker Compose File
 
-In the wizard, you'll need to provide a Docker Compose configuration file. The Docker Compose file for OpenWebUI can be found [here](https://github.com/open-webui/open-webui).
+In the wizard, you'll need to provide a Docker Compose configuration file. The Docker Compose file for OpenWebUI can be found [here](https://raw.githubusercontent.com/UGREEN-NASync/community-guide/refs/heads/main/docs/ugos/install/open-webui/compose.yaml).
 
 ::: details
-- Specify the OpenWebUI Docker image to use. The `latest` tag ensures that the most recent version is pulled.
+- Specify the OpenWebUI Docker image to use. The `main` tag ensures that the most recent version is pulled.
 - Ensure the configuration includes necessary environment variables for your setup, such as time zone settings. This is essential for maintaining consistent timestamps for automated tasks and logs. You can adjust the time zone to match your location (e.g., `America/Chicago` or `Europe/Berlin`).
 :::
 
 ### 3. Deploy the Project
 
-After confirming that the configuration file is correct, click "Deploy Now". The system will automatically pull the image and start the container. Once the deployment is complete, you can access the OpenWebUI Webpage by visiting `your-server-name.local:[port]` in your browser.
+After confirming that the configuration file is correct, click "Deploy Now". The system will automatically pull the image and start the container. Once the deployment is complete, you can access the OpenWebUI Webpage by visiting `your-server-name.local:3000` in your browser.
 
 ::: info Credit
 This guide was created by [Topiga](https://github.com/topiga/). Consider sponsoring [Timothy Jaeryang Baek](https://github.com/sponsors/tjbck) to support their great work!
