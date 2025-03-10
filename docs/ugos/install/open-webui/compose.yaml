@@ -1,0 +1,18 @@
+name: open-webui
+
+services:
+  image: ghcr.io/open-webui/open-webui:main
+  container_name: open-webui
+  environment:
+    TZ: Asia/Shanghai
+    LAN_PORT: 3000
+  volumes:
+    - appdata:/app/backend/data
+  ports:
+    - ${LAN_PORT}:8080
+  extra_hosts:
+    - host.docker.internal:host-gateway
+  restart: unless-stopped
+
+volumes:
+  open-webui: {}
