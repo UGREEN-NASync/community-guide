@@ -31,8 +31,6 @@ In the wizard, you'll need to provide a Docker Compose configuration file. The D
 
 After confirming that the configuration file is correct, click "Deploy Now". The system will automatically pull the image and start the container. Once the deployment is complete, you can access the NPM Webpage by visiting `your-nas-name.local:8181` in your browser.
 
-![Docker Configuration page](./config-docker.png)
-
 ## Option 2: Deploy Using SSH
 
 If you prefer using SSH for more control over the setup process, follow these steps:
