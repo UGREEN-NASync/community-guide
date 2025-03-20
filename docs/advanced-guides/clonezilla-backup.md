@@ -16,7 +16,7 @@ You now have a bootable Clonezilla USB stick and can proceed with the backup.
 
 ## Booting to Clonezilla
 
-Refer to the [Accessing BIOS](docs/advanced-guides/accessing-bios.md) guide for detailed instructions on how to access and configure your BIOS settings. Once in the BIOS, set the USB stick as the first boot device, save changes, and restart your computer.
+Refer to the [Accessing BIOS](/advanced-guides/accessing-bios.md) guide for detailed instructions on how to access and configure your BIOS settings. Once in the BIOS, set the USB stick as the first boot device, save changes, and restart your computer.
 
 Once Clonezilla boots, follow the backup instructions below.
 
