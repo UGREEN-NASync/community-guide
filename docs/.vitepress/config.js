@@ -60,6 +60,7 @@ export default {
         text: 'Advanced Guides',
         items: [
           { text: 'Accessing BIOS', link: '/advanced-guides/accessing-bios' },
+          { text: 'Backup UGOS SSD', link: '/advanced-guides/clonezilla-backup' },
           // ... other advanced guides
         ]
         },
