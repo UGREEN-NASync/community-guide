@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # User's home directory
-USER="<USER NAME>"
+USER="$1"
 HOME_DIR="/home/$USER"
 SSH_DIR="$HOME_DIR/.ssh"
 AUTHORIZED_KEYS="$SSH_DIR/authorized_keys"
+# Add further files if necessary
 
 # Function to set permissions
 set_permissions() {
@@ -24,6 +25,8 @@ set_permissions() {
         echo "Setting permissions for $AUTHORIZED_KEYS to 600"
         sudo chmod 600 "$AUTHORIZED_KEYS"
     fi
+
+    # Add further actions if necessary
 }
 
 # Initial permissions check
