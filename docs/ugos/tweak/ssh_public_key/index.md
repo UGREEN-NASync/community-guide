@@ -27,7 +27,7 @@ Next, create the service file
 sudo nano /etc/systemd/system/ssh-permission-monitor@.service 
 ```
 
-and paste the content of [ssh-permission-monitor.service](https://github.com/UGREEN-NASync/community-guide/blob/main/docs/ugos/tweak/ssh_public_key/ssh-permission-monitor@.service) inside. Again, replace `<USER NAME>` with you actual username.
+and paste the content of [ssh-permission-monitor@.service](https://github.com/UGREEN-NASync/community-guide/blob/main/docs/ugos/tweak/ssh_public_key/ssh-permission-monitor@.service) inside. Again, replace `<USER NAME>` with you actual username.
 
 Now reload the systemctl daemon:
 
