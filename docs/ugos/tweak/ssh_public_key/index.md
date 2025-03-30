@@ -41,7 +41,7 @@ And enable and start the service:
 sudo systemctl enable ssh-permission-monitor@<USER NAME>.service
 sudo systemctl start ssh-permission-monitor@<USER NAME>.service
 ```
-Make sure to replace `<USER NAME>` with you actual username.
+Make sure to replace `<USER NAME>` with your actual username.
 
 You can also look at the service status and troublshoot issues:
 
