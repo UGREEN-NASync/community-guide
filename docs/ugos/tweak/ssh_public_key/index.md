@@ -16,6 +16,7 @@ Next, create a new file for the script
 
 ```sh
 sudo nano /usr/local/bin/check_and_fix_ssh_permissions.sh
+sudo chmod +x /usr/local/bin/check_and_fix_ssh_permissions.sh
 ```
 
 and paste the content of [check_and_fix_ssh_permissions.sh](https://raw.githubusercontent.com/UGREEN-NASync/community-guide/refs/heads/main/docs/ugos/tweak/ssh_public_key/check_and_fix_ssh_permissions.sh) inside. Make sure to replace `<USER NAME>` with you actual username.
@@ -23,10 +24,10 @@ and paste the content of [check_and_fix_ssh_permissions.sh](https://raw.githubus
 Next, create the service file
 
 ```sh
-sudo nano /etc/systemd/system/ssh-permission-monitor.service
+sudo nano /etc/systemd/system/ssh-permission-monitor@.service 
 ```
 
-and paste the content of [ssh-permission-monitor.service](https://github.com/UGREEN-NASync/community-guide/blob/main/docs/ugos/tweak/ssh_public_key/ssh-permission-monitor.service) inside. Again, replace `<USER NAME>` with you actual username.
+and paste the content of [ssh-permission-monitor@.service](https://github.com/UGREEN-NASync/community-guide/blob/main/docs/ugos/tweak/ssh_public_key/ssh-permission-monitor@.service) inside. Again, replace `<USER NAME>` with you actual username.
 
 Now reload the systemctl daemon:
 
@@ -37,14 +38,15 @@ sudo systemctl daemon-reload
 And enable and start the service:
 
 ```sh
-sudo systemctl enable ssh-permission-monitor.service
-sudo systemctl start ssh-permission-monitor.service
+sudo systemctl enable ssh-permission-monitor@<USER NAME>.service
+sudo systemctl start ssh-permission-monitor@<USER NAME>.service
 ```
+Make sure to replace `<USER NAME>` with your actual username.
 
 You can also look at the service status and troublshoot issues:
 
 ```sh
-sudo systemctl status ssh-permission-monitor.service
+sudo systemctl status ssh-permission-monitor@<USER NAME>.service
 ```
 
 After those steps, your key should be accepted even after system reboots or configuration changes through the UGOS web interface.
