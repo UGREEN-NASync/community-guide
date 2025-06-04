@@ -93,7 +93,6 @@ Replace the subnet below with your actual network range:
 
 ```sh
 sudo tailscale up --advertise-routes=192.168.100.0/24 --accept-routes --accept-dns=false
-```
 
 Then approve the advertised route in the Tailscale admin panel under **Machines → Routes**.
 
