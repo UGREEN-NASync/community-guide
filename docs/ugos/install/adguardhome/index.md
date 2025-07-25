@@ -63,6 +63,8 @@ Verify that port 53 is now free
 ```bash
 sudo lsof -i :53
 
+```
+
 If the command returns no output, port 53 is no longer in use. After that you should restart your AdGuard Home container.
 
 ### ⚠️ Disabling dnsmasq may affect other NAS-related DNS services. Make sure that AdGuard Home is configured correctly and starts automatically to replace its functionality.
