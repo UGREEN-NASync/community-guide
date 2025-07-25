@@ -50,7 +50,8 @@ export default {
                 { text: 'Nextcloud-AIO', link: '/ugos/install/nextcloud-aio' },
                 { text: 'Ngnix Proxy Manager', link: '/ugos/install/npm' },
                 { text: 'OpenWebUI', link: '/ugos/install/open-webui' },
-                { text: 'Tailscale', link: '/ugos/install/tailscale' }
+                { text: 'Tailscale', link: '/ugos/install/tailscale' },
+                 { text: 'AdGuard Home', link: '/ugos/install/adguardhome'} 
               ]
             }
             // Add more sidebar items
