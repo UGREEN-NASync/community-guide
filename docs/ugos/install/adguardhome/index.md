@@ -64,9 +64,23 @@ Verify that port 53 is now free
 sudo lsof -i :53
 
 ```
-If the command returns no output, port 53 is no longer in use.
-
+If the command returns no output, port 53 is no longer in use. After that you should restart your Adguard Home container.
 
 ### ⚠️ Disabling dnsmasq may affect other NAS-related DNS services. Make sure that AdGuard Home is configured correctly and starts automatically to replace its functionality.
 
+# ⚙️ Initial Configuration of AdGuard Home
+
+After the container starts successfully, open the web interface again by visiting  `http://your-nas-name.local:3000` in your browser.
+
+You will be guided through a short setup wizard. In the wizard:
+
+- Set a username and password for the admin interface.
+- Configure which upstream DNS servers to use (e.g., 1.1.1.1 or 8.8.8.8).
+- Define the listening interfaces (usually 0.0.0.0 to listen on all).
+- Optionally enable DHCP services, if AdGuard Home should manage IPs on your network.
+- Review and apply your settings.
+
+Once complete, the dashboard will show DNS statistics and allow further customization like blacklists, rewrites, client rules, and logging.
+
+Make sure to set your router or clients to use your NAS IP as their DNS server so AdGuard Home becomes active in your network.
 
