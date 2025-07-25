@@ -21,15 +21,17 @@ In the UGOS Pro system of UGREEN NAS, open the "Docker" app, click "Project > Cr
 
 In the wizard, you'll need to provide a Docker Compose configuration file. Below is the example configuration file for AdGuard Home:
 
-	services:
-	  adguardhome:
-		container_name: adguardhome
-		image: adguard/adguardhome:latest
-		restart: unless-stopped
-		network_mode: host
-		volumes:
-		  - /volume2/docker/adguardhome/work:/opt/adguardhome/work
-		  - /volume2/docker/adguardhome/conf:/opt/adguardhome/conf
+```yml
+services:
+  adguardhome:
+    container_name: adguardhome
+    image: adguard/adguardhome:latest
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /volume2/docker/adguardhome/work:/opt/adguardhome/work
+      - /volume2/docker/adguardhome/conf:/opt/adguardhome/conf
+```
 
 ::: details
 
