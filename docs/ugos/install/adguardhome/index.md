@@ -2,10 +2,10 @@
 
 AdGuard Home is a network-wide DNS server and blocker that filters ads, trackers, and malicious domains at the DNS level — before they even reach your devices. It acts as a local DNS resolver, allowing you to:
 
-  • Block ads and trackers on all devices (even smart TVs and game consoles)
-  • Monitor and control internet traffic on your network
-  • Set parental controls and filtering rules
-  • Protect your privacy by avoiding third-party DNS providers
+  - Block ads and trackers on all devices (even smart TVs and game consoles)
+  - Monitor and control internet traffic on your network
+  - Set parental controls and filtering rules
+  - Protect your privacy by avoiding third-party DNS providers
 
 Unlike browser-based ad blockers, AdGuard Home works for all devices on your network — with no need to install anything on each one.
 
@@ -65,5 +65,8 @@ sudo lsof -i :53
 
 ```
 If the command returns no output, port 53 is no longer in use.
+
+
+### ⚠️ Disabling dnsmasq may affect other NAS-related DNS services. Make sure that AdGuard Home is configured correctly and starts automatically to replace its functionality.
 
 
