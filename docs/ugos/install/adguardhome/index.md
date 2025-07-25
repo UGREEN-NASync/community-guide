@@ -43,3 +43,27 @@ In the wizard, you'll need to provide a Docker Compose configuration file. Below
 ### 3. Deploy the Project
 
 Once the deployment is complete, you can access the AdGuard Home web interface by visiting `http://your-nas-name.local:3000` in your browser.
+
+## 🛑 Preventing Port Conflicts with `dnsmasq`
+
+By default, UGOS uses `dnsmasq` to handle DNS requests, which binds to port `53` on `localhost`. This will conflict with AdGuard Home, which also needs to bind to port `53`.
+
+To resolve this, you need to stop and disable `dnsmasq`:
+
+### Steps to disable `dnsmasq` on UGOS
+
+```bash
+sudo systemctl stop dnsmasq
+sudo systemctl disable dnsmasq
+
+```
+
+Verify that port 53 is now free
+
+```bash
+sudo lsof -i :53
+
+```
+If the command returns no output, port 53 is no longer in use.
+
+
