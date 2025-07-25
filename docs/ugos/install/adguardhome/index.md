@@ -11,7 +11,7 @@ Unlike browser-based ad blockers, AdGuard Home works for all devices on your net
 
 ## Deploy Container Using Docker Compose
 
-To quickly deploy Home Assistant on UGREEN NAS, it is recommended to use Docker Compose for project management. This method is suitable when you need to create and manage multiple containers, making containerized management convenient.
+To quickly deploy AdGuard Home on UGREEN NAS, it is recommended to use Docker Compose for project management. This method is suitable when you need to create and manage multiple containers, making containerized management convenient.
 
 ### 1. Access the Docker Project Interface
 
@@ -63,8 +63,7 @@ Verify that port 53 is now free
 ```bash
 sudo lsof -i :53
 
-```
-If the command returns no output, port 53 is no longer in use. After that you should restart your Adguard Home container.
+If the command returns no output, port 53 is no longer in use. After that you should restart your AdGuard Home container.
 
 ### ⚠️ Disabling dnsmasq may affect other NAS-related DNS services. Make sure that AdGuard Home is configured correctly and starts automatically to replace its functionality.
 
