@@ -51,7 +51,7 @@ export default {
                 { text: 'Ngnix Proxy Manager', link: '/ugos/install/npm' },
                 { text: 'OpenWebUI', link: '/ugos/install/open-webui' },
                 { text: 'Tailscale', link: '/ugos/install/tailscale' },
-                 { text: 'AdGuard Home', link: '/ugos/install/adguardhome'} 
+                { text: 'AdGuard Home', link: '/ugos/install/adguardhome'} 
               ]
             }
             // Add more sidebar items
