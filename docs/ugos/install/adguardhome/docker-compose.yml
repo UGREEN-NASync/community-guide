@@ -1,6 +1,6 @@
 services:
     adguardhome:
-        image: adguard/adguardhome
+        image: adguard/adguardhome:latest
         container_name: adguardhome
         restart: unless-stopped
         volumes:
