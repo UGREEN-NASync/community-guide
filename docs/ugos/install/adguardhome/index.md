@@ -23,14 +23,31 @@ In the wizard, you'll need to provide a Docker Compose configuration file. Below
 
 ```yml
 services:
-  adguardhome:
-    container_name: adguardhome
-    image: adguard/adguardhome:latest
-    restart: unless-stopped
-    network_mode: host
-    volumes:
-      - /volume2/docker/adguardhome/work:/opt/adguardhome/work
-      - /volume2/docker/adguardhome/conf:/opt/adguardhome/conf
+    adguardhome:
+        image: adguard/adguardhome:latest
+        container_name: adguardhome
+        restart: unless-stopped
+        volumes:
+            - /volume2/docker/adguardhome/work:/opt/adguardhome/work
+            - /volume2/docker/adguardhome/conf:/opt/adguardhome/conf
+        network_mode: host
+        # -->
+        # Port mappings are not required when using network_mode: host
+        # ports:
+        #     - 53:53/tcp # DNS
+        #     - 53:53/udp # DNS
+        #     - 67:67/udp # DHCP
+        #     - 68:68/udp # DHCP
+        #     - 80:80/tcp # Admin-Panel
+        #     - 443:443/tcp # Admin-Panel
+        #     - 443:443/udp # DNS over HTTPS
+        #     - 3000:3000/tcp # Admin-Panel
+        #     - 853:853/tcp # DNS over TLS
+        #     - 853:853/udp # DNS over QUIC
+        #     - 5443:5443/tcp # DNSCrypt
+        #     - 5443:5443/udp # DNSCrypt
+        #     - 6060:6060/tcp # Debugging
+        # <--
 ```
 
 ::: details
