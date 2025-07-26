@@ -54,24 +54,30 @@ To resolve this, you need to stop and disable `dnsmasq`:
 
 ### Steps to disable `dnsmasq` on UGOS
 
+1. Open a terminal on your computer and connect to your NAS via SSH:
+
+```bash
+ssh youruser@yourNASiP
+```
+
+2. Disable dnsmasq:
+
 ```bash
 sudo systemctl stop dnsmasq
 sudo systemctl disable dnsmasq
-
 ```
 
-Verify that port 53 is now free
+3. Check if port 53 is now free:
 
 ```bash
 sudo lsof -i :53
-
 ```
 
-If the command returns no output, port 53 is no longer in use. After that you should restart your AdGuard Home container.
+If the command returns no output, port 53 is no longer in use. After that, you should restart your AdGuard Home container.
 
-### ⚠️ Disabling dnsmasq may affect other NAS-related DNS services. Make sure that AdGuard Home is configured correctly and starts automatically to replace its functionality.
+### ⚠️ Disabling dnsmasq may affect other NAS-related DNS services. Make sure that AdGuard Home is configured correctly and starts automatically to take over its functionality.
 
-# ⚙️ Initial Configuration of AdGuard Home
+## ⚙️ Initial Configuration of AdGuard Home
 
 After the container starts successfully, open the web interface again by visiting  `http://your-nas-name.local:3000` in your browser.
 
