@@ -118,8 +118,6 @@ You will be guided through a short setup wizard. In the wizard:
 - Optionally enable DHCP services, if AdGuard Home should manage IPs on your network.
 - Review and apply your settings.
 
-Once complete, the dashboard will show DNS statistics and allow further customization like blacklists, rewrites, client rules, and logging.
-
 Make sure to set your router or clients to use your NAS IP as their DNS server so AdGuard Home becomes active in your network.
 
 After the container starts successfully, open the web interface again by visiting  `http://your-nas-name.local:3000` in your browser.
@@ -132,7 +130,24 @@ You will be guided through a short setup wizard. In the wizard:
 - Optionally enable DHCP services, if AdGuard Home should manage IPs on your network.
 - Review and apply your settings.
 
-Once complete, the dashboard will show DNS statistics and allow further customization like blacklists, rewrites, client rules, and logging.
+## 🚀 Next Steps & Advanced Configuration
+
+Now that AdGuard Home is up and running, consider these next steps to enhance your setup:
+
+- **Customize Filtering:**  
+  Add custom blocklists, allowlists, or create client-specific rules for granular control.
+
+- **Enable DNS-over-HTTPS/TLS/QUIC:**  
+  Increase privacy by enabling encrypted DNS protocols in *Settings > DNS Settings*.
+
+- **Backup Configuration:**  
+  Periodically export your AdGuard Home configuration for disaster recovery.
+
+
 
 Make sure to set your router or clients to use your NAS IP as their DNS server so AdGuard Home becomes active in your network.
+
+
+For more advanced topics and troubleshooting, visit the [official AdGuard Home documentation](https://github.com/AdguardTeam/AdGuardHome/wiki).
+
 
