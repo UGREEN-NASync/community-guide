@@ -73,7 +73,7 @@ services:
 
 Once the deployment is complete, you can access the AdGuard Home web interface by visiting `http://your-nas-name.local:3000` in your browser.
 
-> [!WARNING]
+> [!CAUTION]
 > Preventing Port Conflicts with `dnsmasq`:
 >
 >By default, UGOS uses `dnsmasq` to handle DNS requests, which binds to port `53` on `localhost`. This will conflict with AdGuard >Home, which also needs to bind to port `53`.
