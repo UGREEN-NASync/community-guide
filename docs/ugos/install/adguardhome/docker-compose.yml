@@ -1,0 +1,26 @@
+services:
+    adguardhome:
+        image: adguard/adguardhome:latest
+        container_name: adguardhome
+        restart: unless-stopped
+        volumes:
+            - /volume2/docker/adguardhome/work:/opt/adguardhome/work
+            - /volume2/docker/adguardhome/conf:/opt/adguardhome/conf
+        network_mode: host
+        # The following port mappings are commented out because they are not required when using network_mode: host.
+        # With host networking, the container uses the host's network stack directly and can bind to the necessary ports without explicit mappings.
+        # However, these lines are included as a reference for which ports AdGuard Home typically uses, in case you ever switch to bridge mode or need to troubleshoot:
+        # ports:
+        #     - 53:53/tcp   # DNS
+        #     - 53:53/udp   # DNS
+        #     - 67:67/udp   # DHCP
+        #     - 68:68/udp   # DHCP
+        #     - 80:80/tcp   # Admin Panel
+        #     - 443:443/tcp # Admin Panel
+        #     - 443:443/udp # DNS over HTTPS
+        #     - 3000:3000/tcp # Admin Panel
+        #     - 853:853/tcp # DNS over TLS
+        #     - 853:853/udp # DNS over QUIC
+        #     - 5443:5443/tcp # DNSCrypt
+        #     - 5443:5443/udp # DNSCrypt
+        #     - 6060:6060/tcp # Debugging
