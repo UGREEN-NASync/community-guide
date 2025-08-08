@@ -1,9 +1,9 @@
 # How to install AdGuard Home on Docker
 
-::: tip PREREQUISITE  
-AdGuard Home needs to bind to port 53 (DNS). On UGOS, this port is often already used by `dnsmasq` or other services.  
-Before installing, ensure that no other service is using port 53, or be prepared to disable/conflict-resolving as described below.
-:::
+> [!TIP] PREREQUISITE  
+>AdGuard Home needs to bind to port 53 (DNS). On UGOS, this port is often already used by `dnsmasq` or other services.  
+>Before installing, ensure that no other service is using port 53, or be prepared to disable/conflict-resolving as described below.
+
 
 AdGuard Home is a network-wide DNS server and blocker that filters ads, trackers, and malicious domains at the DNS level — before they even reach your devices. It acts as a local DNS resolver, allowing you to:
 
@@ -14,9 +14,9 @@ AdGuard Home is a network-wide DNS server and blocker that filters ads, trackers
 
 Unlike browser-based ad blockers, AdGuard Home works for all devices on your network — with no need to install anything on each one.
 
-::: warning  
-This guide was last tested for AdGuard Home v0.107.63
-:::  
+> [!WARNING]  
+>This guide was last tested for AdGuard Home v0.107.63
+
 
 ## Deploy Container Using Docker Compose
 
