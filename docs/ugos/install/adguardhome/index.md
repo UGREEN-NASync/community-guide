@@ -1,7 +1,6 @@
 # How to install AdGuard Home on Docker
 
-::: tip prerequisite
-**Prerequisite:**  
+::: tip PREREQUISITE  
 AdGuard Home needs to bind to port 53 (DNS). On UGOS, this port is often already used by `dnsmasq` or other services.  
 Before installing, ensure that no other service is using port 53, or be prepared to disable/conflict-resolving as described below.
 :::
