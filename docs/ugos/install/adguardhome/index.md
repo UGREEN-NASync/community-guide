@@ -76,7 +76,7 @@ Once the deployment is complete, you can access the AdGuard Home web interface b
 > [!CAUTION]
 > Preventing Port Conflicts with `dnsmasq`:
 >
->By default, UGOS uses `dnsmasq` to handle DNS requests, which binds to port `53` on `localhost`. This will conflict with AdGuard >Home, which also needs to bind to port `53`.
+>By default, UGOS uses `dnsmasq` to handle DNS requests, which binds to port `53` on `localhost`. This will conflict with AdGuard Home, which also needs to bind to port `53`.
 
 To resolve this, you need to stop and disable `dnsmasq`:
 
