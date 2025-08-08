@@ -1,6 +1,6 @@
 # How to install AdGuard Home on Docker
 
-> [!TIP] PREREQUISITE  
+> [!NOTE]   
 >AdGuard Home needs to bind to port 53 (DNS). On UGOS, this port is often already used by `dnsmasq` or other services.  
 >Before installing, ensure that no other service is using port 53, or be prepared to disable/conflict-resolving as described below.
 
@@ -73,9 +73,10 @@ services:
 
 Once the deployment is complete, you can access the AdGuard Home web interface by visiting `http://your-nas-name.local:3000` in your browser.
 
-## 🛑 Preventing Port Conflicts with `dnsmasq`
-
-By default, UGOS uses `dnsmasq` to handle DNS requests, which binds to port `53` on `localhost`. This will conflict with AdGuard Home, which also needs to bind to port `53`.
+> [!WARNING]
+> Preventing Port Conflicts with `dnsmasq`:
+>
+>By default, UGOS uses `dnsmasq` to handle DNS requests, which binds to port `53` on `localhost`. This will conflict with AdGuard >Home, which also needs to bind to port `53`.
 
 To resolve this, you need to stop and disable `dnsmasq`:
 
