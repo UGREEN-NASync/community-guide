@@ -2,9 +2,8 @@
 
 Immich is a **self-hosted** photo and video management solution that allows users to back up, organize, and manage their media on their **own** servers, offering enhanced **privacy** and **control** over personal data. It is designed for **high performance**, capable of handling **large media libraries** efficiently. Key features include **automatic backups** from **mobile devices**, **multi-user** support, **advanced search** functionality using tags and EXIF data, **image tagging**, **object detection**, and **geolocation** mapping. Immich's user-friendly mobile app and web interface make it **easy to upload and view** media, while its active community ensures ongoing development and support. This makes Immich a robust, privacy-focused alternative to third-party cloud services for managing extensive photo and video collections.
 
-::: warning
-This guide was last tested for Immich v1.128.0
-:::
+> [!WARNING]
+>This guide was last tested for Immich v1.128.0
 
 ## Option 1: Deploy Container Using Docker Compose
 

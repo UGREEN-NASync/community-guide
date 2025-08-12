@@ -2,9 +2,8 @@
 
 OpenWebUI is an extensible, self-hosted AI interface designed to operate entirely offline, offering users full control over their data and privacy. It supports various LLM runners, including Ollama and OpenAI-compatible APIs, making it a versatile tool for deploying AI models in a secure environment. The platform is highly customizable, allowing users to adapt it to their specific workflows through plugins and integrations. Whether for personal or professional use, OpenWebUI provides a robust solution for AI deployment, ensuring that users can leverage AI capabilities without compromising on privacy or security. With an active development community, OpenWebUI continues to evolve, offering new features and improvements to enhance user experience.
 
-::: warning
-This guide was last tested for OpenWebUI v0.5.20
-:::
+> [!WARNING]
+>This guide was last tested for OpenWebUI v0.5.20
 
 ## Option 1: Deploy Container Using Docker Compose
 

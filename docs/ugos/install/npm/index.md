@@ -6,9 +6,8 @@ Certainly! Here's the updated guide with both the Docker Compose and SSH options
 
 Nginx Proxy Manager (NPM) is a powerful tool that simplifies the process of managing Nginx proxy hosts. It provides a user-friendly web interface for handling SSL certificates, reverse proxy settings, and more. This guide will walk you through setting up NPM on your UGREEN NAS using either Docker Compose or SSH, ensuring a seamless and secure configuration.
 
-::: warning
-This guide was last tested for NPM v2.9.13
-:::
+> [!WARNING]
+>This guide was last tested for NPM v2.9.13
 
 ## Option 1: Deploy Container Using Docker Compose
 
@@ -114,9 +113,8 @@ To add proxy hosts to your NPM instance, follow these steps:
 11. Enable `Force SSL`, `HTTP/2 Support`, `HSTS enabled`, `HSTS subdomains`.
 12. Click save to save the new proxy host.
 
-::: warning IMPORTANT
-Make sure that the external HTTPS port that you specified for NPM in the docker-compose.yaml (e.g., `4443:443` OR `443:443` OR `ANY_PORT:443`) is forwarded by your router to your server. This should be the only open port on your router! DO NOT open the ports of the individual services directly on your router. This is the whole point of using a reverse proxy such as NPM!
-:::
+> [!IMPORTANT] 
+>Make sure that the external HTTPS port that you specified for NPM in the docker-compose.yaml (e.g., `4443:443` OR `443:443` OR `ANY_PORT:443`) is forwarded by your router to your server. This should be the only open port on your router! DO NOT open the ports of the individual services directly on your router. This is the whole point of using a reverse proxy such as NPM!
 
 ## Optional: Log Dashboard with GoAccess
 

@@ -18,21 +18,22 @@ If you have SSH access enabled in UG-OS:
 ```bash
 systemctl reboot --firmware-setup
 ```
-::: warning
-Some unofficial guides suggest renaming the EFI folder in the boot partition. This method is **not recommended** as it unnecessarily modifies the boot partition and could potentially cause issues.
-:::
+
+> [!WARNING]
+> Some unofficial guides suggest renaming the EFI folder in the boot partition. This method is **not recommended** as it unnecessarily modifies the boot partition and could potentially cause issues.
 
 ## Important BIOS Configuration
 
 ### Disabling the Watchdog
 The watchdog is a security feature that will restart your device if UG-OS is not running. This can interfere with BIOS configuration and alternative OS installations.
 
-::: tip Important
-It's recommended to disable the watchdog as your first action in BIOS because:
-1. Being in BIOS counts as "UG-OS not running"
-2. The watchdog will force a restart after a few minutes if not disabled
-3. This can interrupt your BIOS configuration process
-:::
+
+> [!IMPORTANT] 
+> It's recommended to disable the watchdog as your first action in BIOS because:
+> 1. Being in BIOS counts as "UG-OS not running"
+> 2. The watchdog will force a restart after a few minutes if not disabled
+> 3. This can interrupt your BIOS configuration process
+
 
 **Steps to disable watchdog:**
 1. Enter BIOS using one of the methods above
