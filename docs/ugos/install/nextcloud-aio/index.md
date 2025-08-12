@@ -2,9 +2,8 @@
 
 Nextcloud-AIO (All-In-One) is a comprehensive solution that simplifies the deployment of Nextcloud, providing a robust and scalable environment for managing your files, calendars, and contacts. This guide will walk you through setting up Nextcloud-AIO on your UGREEN NAS using either Docker Compose or SSH.
 
-::: warning
-This guide was last tested for Nextcloud-AIO v2023.12.0
-:::
+> [!WARNING]
+> This guide was last tested for Nextcloud-AIO v2023.12.0
 
 ## Option 1: Deploy Container Using Docker Compose
 
@@ -18,9 +17,8 @@ In the UGOS Pro system of UGREEN NAS, open the "Docker" app, click "Project > Cr
 
 In the wizard, you'll need to provide a Docker Compose configuration file. The Docker Compose file for Nextcloud-AIO can be found [here](https://raw.githubusercontent.com/UGREEN-NASync/community-guide/refs/heads/main/docs/ugos/install/nextcloud-aio/compose.yaml).
 
-::: tip
-The name of the folder always dictates the prefix that Docker specifies for all things automatically created, e.g., volumes, networks, service names (unless specified otherwise).
-:::
+> [!TIP]
+> The name of the folder always dictates the prefix that Docker specifies for all things automatically created, e.g., volumes, networks, service names (unless specified otherwise).
 
 ### 3. Deploy the Project
 
