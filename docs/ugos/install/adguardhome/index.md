@@ -149,4 +149,8 @@ Make sure to set your router or clients to use your NAS IP as their DNS server s
 
 For more advanced topics and troubleshooting, visit the [official AdGuard Home documentation](https://github.com/AdguardTeam/AdGuardHome/wiki).
 
+::: info CREDIT
+This guide was created by [retardgerman](https://github.com/retardgerman)
+:::
+
 
