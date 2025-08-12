@@ -1,7 +1,3 @@
-Certainly! Here's the updated guide with both the Docker Compose and SSH options for setting up Nginx Proxy Manager (NPM) on a UGREEN NAS:
-
----
-
 # How to Install Nginx Proxy Manager
 
 Nginx Proxy Manager (NPM) is a powerful tool that simplifies the process of managing Nginx proxy hosts. It provides a user-friendly web interface for handling SSL certificates, reverse proxy settings, and more. This guide will walk you through setting up NPM on your UGREEN NAS using either Docker Compose or SSH, ensuring a seamless and secure configuration.
