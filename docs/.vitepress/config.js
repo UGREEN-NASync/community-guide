@@ -69,6 +69,7 @@ export default {
           { text: 'Accessing BIOS', link: '/advanced-guides/accessing-bios' },
           { text: 'Backup UGOS SSD', link: '/advanced-guides/clonezilla-backup' },
           { text: 'VM Folder Passthrough', link: '/advanced-guides/vm-folder-passthrough' },
+          { text: 'Increasing swap space', link: '/advanced-guides/increasing-swap-space' },
           // ... other advanced guides
         ]
         },
